@@ -12,16 +12,14 @@ testing_Btn
     open browser   ${url}        ${browser}
     maximize browser window
     Radio_button_testing
-    check_box_testing
     close browser
 
 *** Keywords ***
 Radio_button_testing
     input text  ${search}      pampers
     click element  id:nav-search-submit-button
-    click element  xpath://*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div[4]/div[1]/h2/a/span
+    click element  xpath://*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div[3]/div[1]/h2
     click element  xpath://*[@id="newAccordionRow"]/div/div[1]/i
-    sleep   3
 
     #select radio button  xpath://*[@id="newAccordionRow"]/div/div[1]/i     One-time purchase:
     #select checkbox  id:p_n_feature_seven_browse-bin/24069095011
